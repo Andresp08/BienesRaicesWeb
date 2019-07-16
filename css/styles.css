@@ -1,0 +1,193 @@
+:root {
+    --primario: #71b100;
+    --secundario: #e08709;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-success {
+    background-color: var(--primario)!important;
+}
+
+
+/*media query hacer transparente el menu en lg*/
+
+@media (min-width: 992px) {
+    .barra.bg-success {
+        background-color: transparent!important;
+    }
+    .header {
+        position: relative;
+    }
+    .header .barra {
+        position: absolute;
+        z-index: 100;
+        /*pone el elemento encima de otro*/
+        width: 100%;
+        /*retome nuevamente su espacio*/
+    }
+}
+
+.header .dropdown-menu {
+    background-color: var(--primario)!important;
+}
+
+.header .dropdown-menu .dropdown-item {
+    color: #fff;
+}
+
+.header .dropdown-menu .dropdown-item:hover {
+    background-color: var(--secundario)!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: .8rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.navbar-brand span {
+    font-weight: 900;
+}
+
+.carousel-caption h3 {
+    font-size: 2.4rem;
+}
+
+
+/*SOBRE NOSOTROS*/
+
+.sobre-nosotros h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn-warning {
+    background: #e08709;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.btn-warning:hover {
+    background: #e29221;
+    color: #000000;
+    font-weight: 700;
+}
+
+
+/*ANUNCIOS*/
+
+.anuncios .card {
+    margin-bottom: 2rem;
+}
+
+.anuncios .card-precio {
+    font-size: 1.1rem;
+    color: #71b100;
+}
+
+.card-descripcion img {
+    margin-right: .5rem;
+}
+
+
+/*CONTACTO*/
+
+.encuentra {
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.encuentra .container .row {
+    height: 25rem;
+}
+
+.encuentra .title {
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+
+/*BLOG*/
+
+
+/*linea debajo*/
+
+.entrada h3::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: .2rem;
+    background: #71b100;
+    margin-top: .5rem;
+}
+
+.meta span {
+    color: #e08709!important;
+}
+
+.entrada .btn-success {
+    background: #71b100;
+    font-weight: 700;
+}
+
+.entrada .btn-success:hover {
+    background: #69a403;
+    font-weight: 700;
+}
+
+
+/*TESTIMONIALES*/
+
+.testimoniales {
+    background-color: #71b100!important;
+}
+
+.testimoniales .testimonial-texto::before {
+    content: open-quote;
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-weight: 900;
+}
+
+.testimoniales .carousel-item {
+    padding-left: 2rem;
+}
+
+.testimoniales .testimonial-texto {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+}
+
+.testimoniales span {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+/*FOOTER*/
+
+.bg-dark {
+    background-color: #333333!important;
+}
+
+.footer .nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+}
